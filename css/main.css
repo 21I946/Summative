@@ -1,0 +1,70 @@
+/*
+How to write CSS rule:
+target { rule-name: rule-value; }
+
+Possible Target:
+- HTML element (<header>)
+- Elements w/ Assigned Class (.grid-box)
+- Elements w/ Assigned ID (#menu)
+
+Example:
+1. Change text color in a container with assigned class name "demo"
+.demo { 
+    color:red;
+}
+
+2. 2px black border with 15px padding all around for an element with assigned class name "box" in a container with assigned class name "grid-container"
+.grid-container .box {
+    border:2px solid black;
+    padding:15px;
+*/
+
+/* Content Starter */
+main {
+    
+}
+
+
+/* Flex Box Starter */
+/* REMEMBER 1: This is just to initiate flex display, you still need to assign rule to its children */
+.flex-container { 
+    display:flex; 
+    align-items:center;
+}
+
+/* Table Starter */
+#schedule-table { 
+    border-collapse:collapse;
+}
+#schedule-table > tbody > tr > th,
+#schedule-table > tbody> tr > td { 
+    border:1px solid black;
+}
+
+/* Grid Box Starter */
+/* REMEMBER 1: There are placeholders in the rule, please change them accordingly */
+/* REMEMBER 2: This is to initiate grid display, you still need to assign rules for its children to determine how many grid columns they take up respectively */
+.grid-container { 
+    display:grid; 
+    grid-template-columns:repeat([number of times],[unit]); 
+    gap:[value]
+}
+a {text-align: right;}
+header {background-color: darkolivegreen;color: white;padding: 15 15 15 15px; text-align: center;}
+.logo {font-size: 20px;border: ridge; border-color: white; border-width: 5px; padding: 5 15 5 15px; flex:1;}
+.slogan {color:aquamarine; font-size: 32px; flex:2}
+.Menu {margin-right: 3px; color:white;flex:1}
+.Menu a {text-decoration: none}
+footer {text-align: center; background-color: black; color: white; padding: 38 38 38 38px}
+body {background-color: beige;}
+main {color:darkmagenta; padding: 30 100 30 100px}
+p {font-size: 16px;}
+h1 {color: red; text-align: center; margin-bottom: 30px;}
+.hero-banner {width: 100%; margin-bottom: 50px}
+.row {text-align: center}
+td {padding: 10 30 10 30px}
+.time {text-align: left;}
+.first-row {background-color: black; color: white}
+.grid {display: grid; grid-template-columns:repeat(12, 1fr);}
+.grid-3 { grid-column: span 3;}
+.grid-6 { grid-column: span 6;}
